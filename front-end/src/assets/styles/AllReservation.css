@@ -1,4 +1,3 @@
-
 .reservations-page {
   width: 100%;
   margin: auto;
@@ -8,15 +7,15 @@
   font-family: Arial, sans-serif;
 }
 
-h1 {
+.all-reservations-title {
   text-align: center;
   font-size: 24px;
   margin-bottom: 20px;
 }
 
 .search-input {
-  width: 100%; 
-  max-width: 250px; 
+  width: 100%;
+  max-width: 250px;
   padding: 10px;
   border: 2px solid #ccc;
   border-radius: 5px;
@@ -30,7 +29,7 @@ h1 {
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  width: auto; 
+  width: auto;
 }
 
 .search-row {
@@ -66,7 +65,7 @@ h1 {
   padding: 20px;
   margin-bottom: 10px;
   border-radius: 10px;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .status-indicator {
@@ -79,7 +78,7 @@ h1 {
 .reservation-details {
   flex-grow: 1;
   margin-top: 10px;
-  width: 100%; 
+  width: 100%;
 }
 
 .detail-button {
@@ -97,7 +96,7 @@ h1 {
   .reservations-page {
     padding: 15px;
   }
-  
+
   .search-row {
     flex-direction: column;
     align-items: stretch;
@@ -106,8 +105,8 @@ h1 {
 
   .search-input,
   .search-button {
-    width: 100%; 
-    max-width: none; 
+    width: 100%;
+    max-width: none;
   }
 
   .reservation-item {
@@ -125,6 +124,6 @@ h1 {
   .reservation-details {
     margin-top: 5px;
     padding-left: 0;
-    width: 100%; 
+    width: 100%;
   }
 }

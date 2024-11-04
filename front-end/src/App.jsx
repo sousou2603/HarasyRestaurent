@@ -8,7 +8,9 @@ import BranchManagement from "./pages/BranchManagement";
 import ChefMenu from "./pages/ChefMenu";
 import Contacts from "./pages/Contacts";
 import HCMMenu from "./pages/HCMMenu";
+import HCMVenues from "./pages/HCMVenues";
 import HNMenu from "./pages/HNMenu";
+import HNVenues from "./pages/HNVenues";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Menu from "./pages/Menu";
@@ -46,6 +48,8 @@ function App() {
         <Route path="/chefmenu" element={<ChefMenu />} />
         <Route path="/branch" element={<BranchManagement />} />
         <Route path="/reservation" element={<ReservationsPage />} />
+        <Route path="/venues/hanoi" element={<HNVenues />} />
+        <Route path="/venues/hcm" element={<HCMVenues />} />
       </Routes>
       {showNavFooter && <Footer />}
     </div>

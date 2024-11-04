@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { FaEdit, FaTrash, FaPlus } from "react-icons/fa";
+import { FaEdit, FaPlus, FaTrash } from "react-icons/fa";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Sidebar from "../components/Sidebar";
 import "../assets/styles/BranchManagement.css";
+import Sidebar from "../components/Sidebar";
 
 const BranchManagement = () => {
   const initialBranchData = [
@@ -140,7 +140,9 @@ const BranchManagement = () => {
         <div className="container py-4">
           <ToastContainer />
           <div className="d-flex justify-content-between align-items-center mb-4">
-            <h1 className="text-center text-white">Branch Management</h1>
+            <h1 className="branch-management text-center text-white">
+              Branch Management
+            </h1>
             <button
               onClick={() => handleOpenModal("add")}
               className="btn d-flex align-items-center"
@@ -198,11 +200,14 @@ const BranchManagement = () => {
           </div>
 
           {isModalOpen && (
-            <div className="modal show d-block" tabIndex="-1">
+            <div
+              className="branch-management-modal modal show d-block"
+              tabIndex="-1"
+            >
               <div className="modal-dialog">
                 <div className="modal-content">
                   <div className="modal-header">
-                    <h5 className="modal-title">
+                    <h5 className="modal-title branch-management-title">
                       {modalMode === "add" ? "Add New Branch" : "Edit Branch"}
                     </h5>
                     <button
@@ -214,7 +219,9 @@ const BranchManagement = () => {
                   <div className="modal-body">
                     <form onSubmit={handleSubmit}>
                       <div className="mb-3">
-                        <label className="form-label">Branch Name</label>
+                        <label className="form-label branch-management-label">
+                          Branch Name
+                        </label>
                         <input
                           type="text"
                           name="name"
@@ -224,8 +231,11 @@ const BranchManagement = () => {
                           required
                         />
                       </div>
+
                       <div className="mb-3">
-                        <label className="form-label">Address</label>
+                        <label className="form-label branch-management-label">
+                          Address
+                        </label>
                         <input
                           type="text"
                           name="address"
@@ -235,8 +245,11 @@ const BranchManagement = () => {
                           required
                         />
                       </div>
+
                       <div className="mb-3">
-                        <label className="form-label">Phone</label>
+                        <label className="form-label branch-management-label">
+                          Phone
+                        </label>
                         <input
                           type="text"
                           name="phone"
@@ -246,8 +259,11 @@ const BranchManagement = () => {
                           required
                         />
                       </div>
+
                       <div className="mb-3">
-                        <label className="form-label">Manager</label>
+                        <label className="form-label branch-management-label">
+                          Manager
+                        </label>
                         <input
                           type="text"
                           name="manager"
@@ -257,12 +273,15 @@ const BranchManagement = () => {
                           required
                         />
                       </div>
+
                       <div className="mb-3">
-                        <label className="form-label">Upload Image</label>
+                        <label className="form-label branch-management-label">
+                          Upload Image
+                        </label>
                         <input
                           type="file"
                           name="image"
-                          onChange={handleInputChange} // No value attribute for file input
+                          onChange={handleInputChange} // Không có thuộc tính value cho input file
                           className="form-control"
                         />
                         {previewUrl && (
@@ -278,8 +297,11 @@ const BranchManagement = () => {
                           />
                         )}
                       </div>
+
                       <div className="mb-3">
-                        <label className="form-label">Status</label>
+                        <label className="form-label branch-management-label">
+                          Status
+                        </label>
                         <select
                           name="status"
                           value={formData.status}
@@ -290,6 +312,7 @@ const BranchManagement = () => {
                           <option value="inactive">Inactive</option>
                         </select>
                       </div>
+
                       <div className="d-flex justify-content-end gap-2">
                         <button
                           type="button"

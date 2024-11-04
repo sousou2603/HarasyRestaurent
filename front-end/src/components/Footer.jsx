@@ -11,19 +11,19 @@ function Footer() {
           <div className="col-md-6">
             <ul className="footer-nav">
               <li>
-                <a href="#">SIGN UP</a>
+                <a href="/">SIGN UP</a>
               </li>
               <li>
-                <a href="#">CAREERS</a>
+                <a href="/">CAREERS</a>
               </li>
               <li>
-                <a href="#">FAQS</a>
+                <a href="/">FAQS</a>
               </li>
               <li>
-                <a href="#">ABOUT</a>
+                <a href="/">ABOUT</a>
               </li>
               <li>
-                <a href="#">CONTACT</a>
+                <a href="/">CONTACT</a>
               </li>
             </ul>
             <div className="footer-policies">
